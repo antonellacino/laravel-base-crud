@@ -2,8 +2,10 @@
 @section('content')
     <ul>
         @foreach($cagnolini as $cagnolino)
-        <li>
-            Nome: {{ $cagnolino['nome'] }}
+        <li>Nome:
+           <a href="{{route('show',$cagnolino['id'])}}">
+             {{ $cagnolino['nome'] }}
+            </a>
         </li>
         <li class="margin_bottom">
             Tipo: {{ $cagnolino['tipo'] }}
