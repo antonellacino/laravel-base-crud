@@ -1,0 +1,28 @@
+//REGOLE GENERICHE
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+main {
+    height: 80vh;
+    font-size: 20px;
+}
+
+//-------------------------------------
+.header {
+    height: 10vh;
+    text-align: center;
+    background-color: lightblue;
+}
+
+.footer {
+    height: 10vh;
+    text-align: center;
+    background-color: rgb(10, 106, 138);
+}
+
+.margin_bottom {
+    margin-bottom: 10px;
+}
