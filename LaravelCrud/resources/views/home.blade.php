@@ -1,5 +1,6 @@
-@extends('main_layout')
+@extends('Layouts.main_layout')
 @section('content')
+<H1>Cagnolini</H1>
     <ul>
         @foreach($cagnolini as $cagnolino)
         <li>Nome:

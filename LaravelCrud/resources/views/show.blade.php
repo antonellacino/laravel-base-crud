@@ -1,4 +1,4 @@
-@extends('main_layout')
+@extends('Layouts.main_layout')
 
 @section('content')
 <ul>

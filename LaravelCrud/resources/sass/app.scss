@@ -6,8 +6,10 @@
 }
 
 main {
-    height: 80vh;
-    font-size: 20px;
+    display: flex;
+    height: auto;
+    font-size: 18px;
+    min-height: 80vh;
 }
 
 //-------------------------------------
@@ -19,10 +21,37 @@ main {
 
 .footer {
     height: 10vh;
+    width: 100%;
     text-align: center;
     background-color: rgb(10, 106, 138);
 }
 
 .margin_bottom {
     margin-bottom: 10px;
+}
+
+.omino {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    ul {
+        list-style: none;
+    }
+    .button,
+    .button2 {
+        width: 50px;
+        height: 40px;
+        background-color: green;
+        color: white;
+    }
+    .button2 {
+        background-color: red
+    }
+}
+
+.flexColumn {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
