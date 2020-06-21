@@ -10,10 +10,14 @@ class OminiController extends Controller
         $omini=Omino::all();
         return view('omini',compact('omini'));
     }
+
+//Visualizzazione dati------------------------------------------------
     public function showOmino($id){
         $omino=Omino::findOrFail($id);
         return view('showOmino',compact('omino'));
     }
+
+//Creazione dati--------------------------------------------------
     public function createOmino(){
         return view('createOmino');
     }
@@ -34,10 +38,13 @@ class OminiController extends Controller
         $newOmino->save();
         return redirect()->route('omini');
     }
+
+//Modifica dati----------------------------------------------------
     public function editOmino($id){
         $omino=Omino::findOrFail($id);
         return view('editOmino',compact('omino'));
     }
+
     public function updateOmino(Request $request,$id){
         $ominoSelected=$request->all();
 
@@ -54,6 +61,8 @@ class OminiController extends Controller
         $omino->save();
         return redirect()->route('showOmino',$omino['id']);
     }
+
+//Eliminazione dati------------------------------------------------------
     public function destroyOmino($id){
         $omino=Omino::findOrFail($id);
         $omino->delete();

@@ -3,6 +3,9 @@
 @section('content')
     <div class="omino">
         <form  class="flexColumn" action="{{ route('updateOmino',$omino['id']) }}">
+            @csrf
+            @method('POST')
+
             <label for="firstname">Name: <input name="firstname" value="{{ $omino['firstname'] }}"></label>
 
 

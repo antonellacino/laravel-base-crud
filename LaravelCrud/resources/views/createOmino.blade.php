@@ -3,6 +3,9 @@
 @section('content')
     <div class="omino">
         <form  class="flexColumn" action="{{ route('storeOmino') }}">
+            @csrf
+            @method('POST')
+
             <label for="firstname">Name: <input name="firstname"></label>
 
             <label for="lastname">Lastname: <input type="text" name="lastname"></label>
@@ -17,7 +20,7 @@
 
             <label for="role">Role: <input type="text" name="role"></label>
 
-            <input type="submit" name="submit" value="Crea">
+            <input class="button" type="submit" name="submit" value="Crea">
 
         </form>
     </div>

@@ -11,6 +11,13 @@ main {
   min-height: 80vh;
 }
 
+.flexColumn {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
 .header {
   height: 10vh;
   text-align: center;
@@ -40,20 +47,20 @@ main {
 
 .omino .button,
 .omino .button2 {
-  width: 50px;
+  width: 150px;
   height: 40px;
   background-color: green;
+  color: white;
+  border-radius: 5px;
+}
+
+.omino .button a,
+.omino .button2 a {
+  text-decoration: none;
   color: white;
 }
 
 .omino .button2 {
   background-color: red;
-}
-
-.flexColumn {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
 }
 

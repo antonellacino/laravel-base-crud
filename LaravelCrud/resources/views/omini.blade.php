@@ -3,7 +3,8 @@
 @section('content')
 
 <div class="omino">
-    <h2><a href="{{ route('createOmino')}}">Crea nuovo omino</a></h2>
+    <h1>Omini</h1>
+    <span class="button"><a href="{{ route('createOmino')}}">Crea nuovo omino</a></span>
     @foreach($omini as $omino)
     <ul>
         <li><a href="{{ route('showOmino',$omino['id']) }}">{{ $omino['firstname'] }} {{ $omino['lastname'] }}</a></li>
